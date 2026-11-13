@@ -1312,6 +1312,22 @@
         }
 
         @media (max-width: 768px) {
+            /* Override do style.css do site principal (menu overlay/hamburger) —
+               o portfólio usa nav simples que quebra em duas linhas */
+            .portfolio-nav .nav-links {
+                position: static;
+                inset: auto;
+                top: auto;
+                transform: none;
+                background: transparent;
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 6px 16px;
+                z-index: auto;
+            }
             .nav-links { gap: 16px; }
             .nav-links a { font-size: 0.78rem; }
             .section { padding: 64px 0; }
